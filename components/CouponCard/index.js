@@ -13,10 +13,11 @@ function App() {
   return (
     <View style={{ shadowColor: 'rgba(0, 0, 0, 0.4)', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 5, elevation: 2 }}>
       <Box
-        width="$64"
+        width={185}
+        height={220}
         borderColor="$borderLight200"
         borderRadius="$xl"
-        borderWidth="$2" // Increase the border width to 2
+        borderWidth="$2"
         my="$4"
         overflow="hidden"
         sx={{
@@ -34,7 +35,7 @@ function App() {
       >
         <Box style={{ position: 'relative' }}>
           <Image
-            style={{ height: 150 }}
+            style={{ height: 120 }}
             source={{
               uri: 'https://images.unsplash.com/photo-1454117096348-e4abbeba002c?auto=format&fit=crop&q=80&w=2602&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             }}
@@ -53,16 +54,18 @@ function App() {
             </TouchableOpacity>
           </Box>
         </Box>
-        <VStack px="$6" pt="$4" pb="$6">
-          <Text style={{ color: 'red' }} fontSize="$sm" my="$1.5">
+        <VStack px="$4" pt="$1.5" pb="$6">
+          <Text style={{ color: 'red' }} fontSize="$sm">
             Discount
           </Text>
-          <Heading _dark={{ color: '$textLight200' }} size="sm">
-            Store
+          <Heading _dark={{ color: '$textLight200' }} size="sm" my="$1">
+                 Store
           </Heading>
-          <Text my="$1.5" _dark={{ color: '$textLight200' }} fontSize="$xs">
-            Lorem Ipsum
-          </Text>
+          <View style={{ backgroundColor: '#f0f0f0', padding: 0.5, borderRadius: 6, width: '60%' }}>
+            <Text _dark={{ color: '$textLight200' }} fontSize="$xs">
+              Lorem Ipsum
+            </Text>
+          </View>
         </VStack>
       </Box>
     </View>

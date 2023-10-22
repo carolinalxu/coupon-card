@@ -1,9 +1,15 @@
 ## run app
-npx expo start
+
+- npx expo start
+- npm i --save @fortawesome/fontawesome-svg-core
+- npm i --save @fortawesome/free-solid-svg-icons
+- npm i --save @fortawesome/free-regular-svg-icons
+- npm install --save react-native-vector-icons react-native-fontawesome
 
 # Safe Area
 
 ## Safe Areas
+
 [Installing dependencies into an Expo managed project](https://reactnavigation.org/docs/5.x/getting-started/)
 npm install @react-native-masked-view/masked-view @react-navigation/stack react-native-gesture-handler react-native-safe-area-context react-native-screens
 
